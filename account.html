@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript" src="script.js"></script>
+<body onload="show()">
+    <!--HEADER-->
+    <div class="header">
+        <div class="logo">
+        <h4>TWITTER</h4>
+        </div>
+        <div class="links">
+            <a href="#">Tweets</a> <a href="#" id="linkName"></a> <a href="login.html"> Logout</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="left"></div>
+        <div class="input">
+        <h2>Welcome <span class="welcomeName" id="welcomeName"></span></h2>
+        <span>EMAIL:</span>
+        <span class="info" id="profile-email"></span>
+        <span>FULL NAME:</span>
+        <span class="info" id="profile-fullname"></span>
+        <span>COUNTRY:</span>
+        <span class="info" id="profile-country"></span>
+        <span>BIRTHDATE:</span>
+        <span class="info" id="profile-birthdate"></span>
+        </div>
+    </div>
+</body>
+<style>
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+    }
+.info{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(44, 131, 145);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.logo{
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+}
+.links a{
+        text-decoration: none;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: lightgray;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+.main{
+    display: flex;
+}
+.left{
+    width: 40%;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input span{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    align-self: flex-start;
+}
+.register{
+    background-color: blue;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    align-self: flex-start;
+    margin-left: 10px;
+}</style>
+</html>
